@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class = "bg-[url('./background.jpg')] flex flex-col items-center">
+    <h1 class="mt-10 font-bold text-4xl bg-purple-700 h-auto w-atuo p-3 rounded-lg shadow-2xl shadow-slate-950 text-white">BMI Calculator </h1>
+    <div class="h-auto w-full max-w-sm p-10 bg-purple-200  mt-4 shadow-xl shadow-green-950">
+        <form action="" class="flex flex-col">
+        <label >Weight (in kg)</label>
+        <input type="number" id="weight" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your weight" required min="0">
+        <label class="mt-2">Height(in cm)</label>
+        <input type="number" id="height" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your height" required min="0">
+        <button class=" bg-purple-700 hover:bg-purple-800 text-2 p-2 rounded-lg text-white font-bold align-middle mt-3">Submit</button>
+        </form>
+        <div id="result" class="mt-4 text-center text-purple-900  text-lg font-semibold"></div>
+        <div id="discription" class="mt-2 text-center text-purple-900 text-2 font-semibold"></div>
+        <!-- information about BMI -->
+         <div  class="mt-6 p-4 bg-purple-100 rounded-md">
+            <h2 class="text-xl font-bold mb-2">BMI Categories:</h2>
+            <ul class="list-disc pl-6" >
+                <li> <strong>Underweight :</strong> BMI &lt; 18.5</li>
+                <li><strong>Normal Weight :</strong> BMI 18.5-24.9</li>
+                <li><strong>Overweight :</strong>BMI 25-29.9</li>
+                <li><strong>Obesity :</strong>BMI &ge; 30</li>
+            </ul>
+         </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
